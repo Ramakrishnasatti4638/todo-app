@@ -75,6 +75,12 @@ function deleteTodo(index) {
     renderTodos();
 }
 
+function clearCompletedTodos() {
+    todos = todos.filter(todo => !todo.completed);
+    saveTodos();
+    renderTodos();
+}
+
 addBtn.addEventListener('click', addTodo);
 
 todoInput.addEventListener('keypress', (e) => {

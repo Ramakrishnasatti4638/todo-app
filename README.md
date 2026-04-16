@@ -38,3 +38,10 @@ todo-app/
 - CSS3
 - JavaScript (ES6+)
 - localStorage API
+
+## Testing
+
+This application includes:
+- Manual testing procedures
+- Browser compatibility checks
+- localStorage functionality tests
