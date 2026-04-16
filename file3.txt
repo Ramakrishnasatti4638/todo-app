@@ -1,0 +1,2 @@
+This is the third new file created for the check branch.
+It contains sample content for demonstration purposes.
