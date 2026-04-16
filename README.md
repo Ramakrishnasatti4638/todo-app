@@ -27,7 +27,9 @@ Your tasks are automatically saved to your browser's localStorage and will persi
 todo-app/
 ├── index.html   # Main HTML structure
 ├── style.css    # Styling and layout
-└── script.js    # Todo logic and localStorage handling
+├── script.js    # Todo logic and localStorage handling
+├── changes.md   # Changelog and update history
+└── README.md    # Project documentation
 ```
 
 ## Technologies Used

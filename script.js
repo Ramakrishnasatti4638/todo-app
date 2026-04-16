@@ -47,15 +47,18 @@ function addTodo() {
     
     if (text === '') {
         alert('Please enter a task!');
+        todoInput.focus();
         return;
     }
     
     todos.push({
         text: text,
-        completed: false
+        completed: false,
+        createdAt: new Date().toISOString()
     });
     
     todoInput.value = '';
+    todoInput.focus();
     saveTodos();
     renderTodos();
 }
