@@ -30,16 +30,41 @@ function renderTodos() {
         text.className = 'todo-text';
         text.textContent = todo.text;
         
+        const upBtn = document.createElement('button');
+        upBtn.className = 'move-btn';
+        upBtn.textContent = '↑';
+        upBtn.title = 'Move up';
+        upBtn.disabled = index === 0;
+        upBtn.addEventListener('click', () => swapTodos(index, index - 1));
+
+        const downBtn = document.createElement('button');
+        downBtn.className = 'move-btn';
+        downBtn.textContent = '↓';
+        downBtn.title = 'Move down';
+        downBtn.disabled = index === todos.length - 1;
+        downBtn.addEventListener('click', () => swapTodos(index, index + 1));
+
         const deleteBtn = document.createElement('button');
         deleteBtn.className = 'delete-btn';
         deleteBtn.textContent = 'Delete';
         deleteBtn.addEventListener('click', () => deleteTodo(index));
-        
+
         li.appendChild(checkbox);
         li.appendChild(text);
+        li.appendChild(upBtn);
+        li.appendChild(downBtn);
         li.appendChild(deleteBtn);
         todoList.appendChild(li);
     });
+}
+
+function swapTodos(i, j) {
+    if (i < 0 || j < 0 || i >= todos.length || j >= todos.length || i === j) {
+        return;
+    }
+    [todos[i], todos[j]] = [todos[j], todos[i]];
+    saveTodos();
+    renderTodos();
 }
 
 function addTodo() {
