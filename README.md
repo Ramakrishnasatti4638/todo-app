@@ -1,4 +1,4 @@
-# Todo App
+# Reddy Todo
 
 A simple, elegant todo list application built with vanilla HTML, CSS, and JavaScript.
 
