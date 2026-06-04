@@ -1,0 +1,11 @@
+Hello World!
+
+This is a test file created for demonstration purposes.
+It contains some sample content to show file creation functionality.
+
+Key points:
+- File creation works correctly
+- Content can be added easily
+- Ready for version control
+
+Created on: 2024
