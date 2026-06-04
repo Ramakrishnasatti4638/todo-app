@@ -1,0 +1,8 @@
+This is rama3.txt - a sample text file.
+
+Content includes:
+- Sample text for demonstration
+- Created for PR testing
+- Multiple lines of content
+
+Feel free to modify this content as needed.
