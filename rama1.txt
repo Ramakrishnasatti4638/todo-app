@@ -1,0 +1,5 @@
+This is a sample text file created for the todo-app project.
+
+It contains some example content to demonstrate file creation.
+
+You can add your own content here as needed.
